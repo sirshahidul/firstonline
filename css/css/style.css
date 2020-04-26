@@ -1,0 +1,620 @@
+* {
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	
+}
+body{
+	cursor:pointer;
+}
+::selection{
+	color:red;
+	background:yellow;
+}
+
+section.all-section {
+    width: 100%;
+    max-width: 1263px;
+    height: 100%;
+    background-color: #00000094;
+    margin:0 auto;
+	overflow:hidden;
+	/* position:fixed; */
+}
+section .top_section {	
+}
+section.top_section .ccontainer {	
+}
+.main_top-m {
+    width: 100%;
+    background-color: #000000;
+    display: inline-flex;
+    border-bottom: 1px solid #4b5f8bf2;
+}
+
+.main_top-m .logo {
+    width: 30%;
+    padding: 0px 54px;
+    margin: 0;
+    margin-top: -10px;
+    z-index: 0;
+    position: relative;
+}
+.logo h2 {
+    margin: 0 auto;
+}
+
+.main_top-m .logo h2 span{
+    font-size: 60px;
+    color: #52c5ff;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-stretch: condensed;
+    font-kerning: normal;
+    font-feature-settings: normal;
+	word-spacing: 13px;
+}
+.main_top-m .logo {	
+	animation-name: lg;
+	animation-duration: 5s;
+	transition:all 4s;
+	animation-direction: alternate;
+	animation-delay: 1s;
+	/* animation-timing-function: linear; */
+	animation-iteration-count: infinite; 
+	/* animation-iteration-count: 2; */
+}
+@keyframes lg {
+	from { transform: scale(0.7); opacity:0;}
+	to { transform: scale(1); opacity:1;}
+	
+}
+
+
+
+.main_top-m .logo h3:before {
+    content: "";
+    top: 26px;
+    left: -31px;
+    position: absolute;
+    background: #ff5722;
+    height: 3px;
+    width: 35px;
+    border-radius: 50%;
+}
+.main_top-m .logo h3 {
+    color: #ffffff;
+    font-size: 33px;
+    font-family: monospace;
+    font-weight: 300;
+    font-style: oblique;
+    font-stretch: expanded;
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+    top: 21px;
+    right: 100px;
+}
+
+.main_top-m .m_menu {
+    width: 60%;
+    float: right;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 300px;
+}
+
+.main_top-m .m_menu nav.menu {
+    display: inline-flex;
+}
+
+.main_top-m .m_menu nav.menu ul {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.main_top-m .m_menu nav.menu ul li {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-left: 10px;
+    border-radius: 5px;
+    /* border-top: 2px solid #52c5ff; */
+    /* border-bottom: 2px solid #52c5ff; */
+    /* border-left: 7px solid #FF5722; */
+    /* border-right: 7px solid #FF5722; */
+	border: 1px solid #4cadde85;
+}
+
+.main_top-m .m_menu nav.menu ul li a {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    font-size: 1.1em;
+    padding: 0px 0px;
+    line-height: 2.5;
+	text-transform: capitalize;
+    background: #363030c2;
+    color: #52c5ffd9 !important;
+    font-weight: 600;
+    opacity: 1;
+    text-decoration: none;
+    transition: color .7s cubic-bezier(.165,.85,.45,1);
+    -moz-transition: color .7s cubic-bezier(.165,.85,.45,1);
+    -webkit-transition: color .7s cubic-bezier(.165,.85,.45,1);
+    -o-transition: color .7s cubic-bezier(.165,.85,.45,1);
+}
+.main_top-m .m_menu nav.menu ul li a:hover {
+    color: white !important;
+}
+
+
+
+/* practice start */
+ul li>a .mask-lnk:after {
+    content: "\f078";
+    margin-left: 5px;
+    position: relative;
+    top: 0;
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: .8em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.mask-lnk{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0px 5px;
+    width: 100%;
+    display: block;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -webkit-transition: opacity .7s cubic-bezier(.165,.85,.45,1),color .7s cubic-bezier(.165,.85,.45,1),transform .7s cubic-bezier(.165,.85,.45,1);
+    transition: opacity .7s cubic-bezier(.165,.85,.45,1),color .7s cubic-bezier(.165,.85,.45,1),transform .7s cubic-bezier(.165,.85,.45,1);
+}
+.mask-lnk.mask-lnk-hover{
+    position: absolute;
+    opacity: 0;
+    padding: 0px 5px;
+    transform: translateY(32px);
+    -webkit-transform: translateY(32px);
+    -moz-transform: translateY(32px);
+    -o-transform: translateY(32px);
+}
+
+.m_menu a:hover .mask-lnk.mask-lnk-hover{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.m_menu a:hover .mask-lnk{
+    opacity: 1;
+    transform: translateY(-32px);
+    -webkit-transform: translateY(-32px);
+    -moz-transform: translateY(-32px);
+    -o-transform: translateY(-32px);
+}
+
+
+/* practice end */
+.pic-bg{	
+	animation-name: example;
+	animation-duration: 17s;
+	transition:all 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;	
+	background-image: url("../img/profile.jpg");
+	position: relative;
+	display: inline-block;
+	top: 15px;
+	left: 30px;
+	bottom: 0;
+	width: 620px;
+	height: 440px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	-webkit-    clip-path: polygon(31% 0,100% 35%,68% 100%,0 40%);
+	clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+	/* z-index: 1; */
+	border: 7px solid #ff5722;
+}
+@keyframes example {
+	from { transform: rotateY(0deg);}
+	to { transform: rotateY(360deg);}
+}
+
+.pic-bg .overlay {
+    background: linear-gradient(to bottom, #00000026 25%, #000000 100%);
+    width: 100%;
+    height: 100%;
+}
+.pictures {
+    /* background-color: #a7b4ae; */
+    width: 50%;
+    position: absolute;
+	animation-name:animatpc;
+	animation-delay:1.5s;
+	animation-duration:5s;
+}
+
+@keyframes animatpc{
+	0%{
+		transform:scale(0);
+		opacity:0;
+	}
+	100%{
+		transform:scale(1);
+		opacity:1;	
+	}
+}
+
+
+
+
+.main-slider {
+    display: inline-flex;
+    width: 100%;
+    height: 530px;
+    position: relative;
+    background: #1c1e23;
+    z-index: 1;
+}
+
+.contents {
+    /* background: rebeccapurple; */
+    width: 40%;
+    /* top: 120px; */
+    right: 120px;
+    position: absolute;
+    justify-content: center;
+    height: 500px;
+}
+
+.contents h2 {
+    justify-content: center;
+    text-align: justify;
+    top: 180px;
+    position: absolute;
+    left: 40px;
+    color: #f1ededd4;
+    font-size: 20px;
+    text-transform: capitalize;
+	animation-name:animatedh;
+	animation-delay:1.5s;
+	animation-duration:1s;
+}
+
+@keyframes animatedh{
+	0%{
+		transform:translateX(120px);
+		opacity:0;
+	}
+	100%{
+		transform:translateX(0px);
+		opacity:1;	
+	}
+}
+
+.contents h2 span{
+	color: #57689e;
+    font-size: 22px;
+	animation-name:animatedsp;
+	animation-delay:1.5s;
+	animation-duration:1s;
+}
+
+@keyframes animatedsp{
+	0%{
+		transform:scale(1);
+		opacity:0;
+	}
+	100%{
+		transform:translateY(0);
+		opacity:1;	
+	}
+}
+.contents h3 {
+    justify-content: center;
+    text-align: justify;
+    top: 204px;
+    position: absolute;
+    left: 40px;
+    color: #f1ededd4;
+    font-size: 21px;
+    text-transform: capitalize;
+    animation-name: animatedhh;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+}
+@keyframes animatedhh{
+	0%{
+		transform:translateX(-120px);
+		opacity:0;
+	}
+	100%{
+		transform:translateX(0px);
+		opacity:1;	
+	}
+}
+
+.personal {
+    width: 20%;
+    /* background: rebeccapurple; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+}
+/* ....................................codepentrype start */
+/* javasrcit  START*/
+/*................. this is work for typewrite start  */ 
+.my-codepen {
+	width: 70%;
+	/* background: red; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 66px;
+}
+
+
+intro {
+    text-align: center;
+    color: #fff;
+    padding-top: 11em;
+    z-index: 3;
+}
+
+
+.intro {
+    position: absolute;
+    width: 100%;
+    top: 56%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    padding: 0px 0px;
+    margin: 0 auto;
+    /* background-size: 237px; */
+    background-position: left center;
+    background-repeat: no-repeat;
+    z-index: 31;
+    text-align: left;
+    max-width: 1140px;
+    text-align: center;
+}
+.intro h1 {
+    font-size: 50px;
+    color: #4b6090 !important;
+    text-align: center;
+}
+.typewrite{	
+    color: #cecdcd !important;
+	text-decoration:none;
+	font-size:60px;
+    text-shadow: 2px 7px 10px #000000;
+    text-transform: capitalize;
+	font-family: 'Kaushan Script', cursive;
+    letter-spacing: 1px;
+	z-index:3;
+}
+.typewrite > .wrap {
+    border-right: 5px solid #fff;
+    font-style: oblique;
+    font-size: 80px;
+    font-weight:100;
+    border-top-left-radius: 100%;
+    /* border-bottom-right-radius: 100%; */
+}
+/* ................................................codepentrype end */
+.personal h4 {
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 0px;
+	animation-name:animatem;
+	animation-delay:1.5s;
+	animation-duration:2s;
+	transition:0.35s;
+}
+
+@keyframes animatem{
+	0%{
+		transform:translateY(40px);
+		opacity:0;
+	}
+	100%{
+		transform:translateY(0px);
+		opacity:1;	
+	}
+}
+
+.personal h4:hover {
+    /* font-size: 20px; */
+    color: red;
+	transform:scale(1.2);
+	text-shadow: 0px -1px 2px #000000;
+}
+
+
+
+
+
+.personal .h4 {
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 0px;
+	animation-name:animatnm;
+	animation-delay:1.5s;
+	animation-duration:2s;
+}
+
+@keyframes animatnm{
+	0%{
+		transform:translateY(-40px);
+		opacity:0;
+	}
+	100%{
+		transform:translateY(0px);
+		opacity:1;	
+	}
+}
+/*................. this is work for typewrite end  */ 
+
+
+/*................. this is work for social-icons start  */ 
+
+.social-icons-fixed {
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: none;
+    background-size: cover;
+    position: relative;
+}
+
+.social-icons-fixed .sc-inner {
+	position: absolute;
+	vertical-align: middle;
+	top: 24%;
+	left: -10px;
+	border-radius: 5px;
+	border: 2px solid red;
+	border-left: 0;
+	transition:all 0.8s;
+	animation-name:animatso;
+	animation-delay:1.5s;
+	animation-duration:3s;
+}
+
+@keyframes animatso{
+	0%{
+		transform:translateX(-220px);
+		opacity:0;
+	}
+	100%{
+		transform:translateX(0px);
+		opacity:1;	
+	}
+}
+.social-icons-fixed .sc-inner:hover{
+	border:0;
+	
+}
+.social-icons-fixed .sc-inner a {
+    border-radius: 3px;
+    color: var(--main-color);
+    display: block;
+    font-size: 35px;
+    margin: 10px;
+	margin-right: 5px;
+    background: #ff572221;
+    height: 40px;
+    width: 45px;
+    text-align: center;
+    justify-content: center;
+    line-height: 45px;
+    color: #f7f4f4;
+    transition: all 0.8s;
+	animation-name:animata;
+	animation-delay:1.5s;
+	animation-duration:3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes animata{
+	0%{
+		transform:scale(0);
+		opacity:0;
+	}
+	100%{
+		transform:scale(1);
+		opacity:1;	
+	}
+}
+
+.social-icons-fixed .sc-inner a>i {
+	transition:all 0.8s;
+	
+}
+.social-icons-fixed .sc-inner a:hover{
+    height: 40px;
+    width: 100px;
+	background: #ff5722;
+	color:#fff !important;
+}
+.social-icons-fixed .sc-inner a:hover  i{
+	color:#fff !important;
+	
+}
+.social-icons-fixed .sc-inner  i.fa.fa-facebook.fa-lg {
+	-o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: none;	
+}
+.social-icons-fixed .sc-inner i.fab.fa-instagram {
+	-o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: none;	
+    color: red;
+}
+
+.social-icons-fixed .sc-inner i.fab.fa-twitter {
+	-o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: none;	
+    color: #28ff00;
+}
+
+.social-icons-fixed .sc-inner i.fab.fa-linkedin {
+	-o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: none;	
+    color: #7ea3f5;
+}
+
+.social-icons-fixed .sc-inner i.fa.fa-envelope {
+	-o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: none;	
+    color: #ffe008;
+}
+/*................. this is work for social-icons end  */ 
