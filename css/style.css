@@ -14,11 +14,11 @@ body{
 section.all-section {
     width: 100%;
     max-width: 1263px;
-    height: 610px;
+    height: 100%;
     background-color: #00000094;
     margin:0 auto;
 	overflow:hidden;
-	position:fixed;
+	
 }
 section .top_section {	
 }
