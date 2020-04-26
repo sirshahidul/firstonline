@@ -10,7 +10,8 @@
 	.toggle_bts {  
 	top: 20% !important;}
 	.contents h3 {
-	top: 227px !important;}
+	top: 215px !important;
+	}
 }
 
 @media only screen and (max-width:400px) {
@@ -41,7 +42,7 @@
 	}
 	
 	.contents {
-		width: 100% !important;
+		width: 89% !important;
 		top: 95px !important;
 		right: 24px !important;
 	}
@@ -68,7 +69,7 @@
 	}
 	
 	.intro {
-		top: 110% !important;
+		top: 65% !important;
 		line-height: 20px !important;
 	}
 	.intro h1 {  
