@@ -41,7 +41,7 @@
 	}
 	
 	.contents {
-		width: 89% !important;
+		width: 100% !important;
 		top: 95px !important;
 		right: 24px !important;
 	}
@@ -68,7 +68,7 @@
 	}
 	
 	.intro {
-		top: 90% !important;
+		top: 100% !important;
 		line-height: 20px !important;
 	}
 	.intro h1 {  
