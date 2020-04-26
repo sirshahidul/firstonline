@@ -1,0 +1,84 @@
+@media only screen and (max-width:1024px) {
+	.main_top-m .logo { 
+		width: 36% !important;
+	}
+	.main_top-m .m_menu { 
+		width:60%;
+		margin-left: 150px !important;
+	}
+	
+	.toggle_bts {  
+	top: 20% !important;}
+	.contents h3 {
+	top: 227px !important;}
+}
+
+@media only screen and (max-width:400px) {
+	
+	.main_top-m .logo {
+		width: 100% !important;
+	position: absolute !important;}
+	
+	.main_top-m .m_menu { 
+		width: 100% !important;
+		position: relative;
+		top: 73px;
+		left: -10px;
+		margin: 0 auto !important;
+		height: 200px;
+	}
+	
+	.main_top-m .m_menu nav.menu ul li {
+		display: inline-block;
+		
+	}
+	.social-icons-fixed .sc-inner {
+	top: 8% !important;}
+	
+	.toggle_bts {
+		top: 60% !important;
+	}
+	
+	.contents {
+		width: 89% !important;
+		top: 42px !important;
+		right: 24px !important;
+	}
+	
+	.contents h2 {
+		margin-top: 40px;
+		font-size: 12px !important;
+	}
+	
+	.contents h3 {
+		font-size: 12px !important;
+	}
+	
+	.contents h2 span {
+	font-size: 17px !important;}
+	.pic-bg {
+		top: 7px !important;
+		left: 58px !important;
+		bottom: 0 ;
+		width: 300px !important;
+		height: 280px !important;
+		
+	}
+	
+	.intro {
+		top: 37% !important;	
+	line-height: 20px !important;}
+	.intro h1 {  
+		margin-bottom: 276px !important;
+		
+	}
+	
+	.typewrite > .wrap {
+		font-size:28px !important;
+	margin:0 auto !important;
+	}
+	
+	
+	.main_top-m .logo h2 span {    margin-left: 67px !important;}
+	
+}	
