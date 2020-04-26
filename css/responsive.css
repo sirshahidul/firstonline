@@ -80,5 +80,14 @@
 	
 	
 	.main_top-m .logo h2 span {    margin-left: 67px !important;}
+	.personal {
+    width: 100% !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    padding: 15px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+	}
 	
 }	
