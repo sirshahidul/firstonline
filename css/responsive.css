@@ -69,15 +69,20 @@
 	}
 	
 	.intro {
+			width:100%;
+		margin:0 auto !important;
 		top: 75% !important;
 		line-height: 20px !important;
 	}
 	.intro h1 {  
+			width:100%;
+		margin:0 auto !important;
 		margin-bottom: 250px !important;
 		
 	}
 	
 	.typewrite > .wrap {
+			width:100%;
 		font-size:27px !important;
 		margin:0 auto !important;
 	}
